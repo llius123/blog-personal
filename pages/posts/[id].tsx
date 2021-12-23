@@ -1,26 +1,22 @@
-import { getAllPostIds, getPostData } from "../../lib/posts";
-import Head from "next/head";
+import { CSSProperties } from "react";
+import { PostInterface } from ".";
+import Header from "../../components/header/header";
+import { getAllPostIds, getPostMetadata } from "../../lib/posts";
 
-export default function Post({ postData }) {
+export default function Post(props: { postData: PostInterface }): JSX.Element {
   return (
-    <div>hola2</div>
-    // <Layout>
-    //   <Head>
-    //     <title>{postData.title}</title>
-    //   </Head>
-    //   <article>
-    //     <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-    //     <div className={utilStyles.lightText}>
-    //       <Date dateString={postData.date} />
-    //     </div>
-    //     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    //   </article>
-    // </Layout>
+    <div style={container_css}>
+      <Header />
+      <div dangerouslySetInnerHTML={{ __html: props.postData.contentHtml }} />
+    </div>
   );
 }
+const container_css: CSSProperties = {
+  display: "grid",
+};
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = await getAllPostIds();
   return {
     paths,
     fallback: false,
@@ -28,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getPostMetadata(params.id);
   return {
     props: {
       postData,
