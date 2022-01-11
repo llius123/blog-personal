@@ -6,20 +6,17 @@ import html from 'remark-html'
 import { PostInterface } from '../pages/posts'
 
 export interface PostsIdInterface {
-    params: {
-        id: string
-    }
+    id: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'posts/posts')
 
 export function getAllPostIds(): PostsIdInterface[] {
     const fileNames = fs.readdirSync(postsDirectory)
+
     return fileNames.map(fileName => {
         return {
-            params: {
-                id: fileName.replace(/\.md$/, '')
-            }
+            id: fileName.replace(/\.md$/, '')
         }
     })
 }
