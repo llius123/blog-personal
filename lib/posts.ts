@@ -15,6 +15,7 @@ const postsDirectory = path.join(process.cwd(), 'posts/posts')
 
 export function getAllPostIds(): PostsIdInterface[] {
     const fileNames = fs.readdirSync(postsDirectory)
+
     return fileNames.map(fileName => {
         return {
             params: {
