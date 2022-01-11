@@ -1,0 +1,11 @@
+Project:
+    - 12-02-2022
+        - Renderizar el contenido del post en la ventana de post
+
+Ideas:
+    - Que todos los posts se carguen al principio y que se guarden en el localstorage? (Repensar si tiene sentido)
+
+Archive:
+    - 11-01-2022 @done
+        - Que funcione el listado de posts @done
+        - Que pueda entrar en un post @done
