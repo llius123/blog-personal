@@ -1,6 +1,6 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import Link from "next/link";
-import { CSSProperties } from "react";
+import React, { CSSProperties } from "react";
 import Header from "../../components/header/header";
 import {
   getAllPostIds,
@@ -16,7 +16,13 @@ export default function Posts(props: {
       <Header />
       <div style={body_css}>
         {props.allPostsId.map((postId, index) => {
-          return <div key={index}>{postId.id}</div>;
+          return (
+            <React.Fragment key={index}>
+              <Link href={"/posts/" + postId.params.id}>
+                {postId.params.id}
+              </Link>{" "}
+            </React.Fragment>
+          );
         })}
       </div>
     </div>
@@ -27,6 +33,7 @@ const body_css: CSSProperties = {
   width: "1400px",
   border: "1px solid red",
   height: "100px",
+  display: "grid",
 };
 const container_css: CSSProperties = {
   display: "grid",
