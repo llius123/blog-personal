@@ -30,7 +30,7 @@ export async function getPostMetadata(id: string): Promise<PostInterface> {
 
 
     // Use gray-matter to parse the post metadata section
-    const { content, data: { title, date } }: matter.GrayMatterFile<string> = matter(fileContents)
+    const { content, data: { title, date, tag } }: matter.GrayMatterFile<string> = matter(fileContents)
 
 
 
@@ -45,6 +45,7 @@ export async function getPostMetadata(id: string): Promise<PostInterface> {
         id,
         contentHtml,
         date,
-        title
+        title,
+        tag
     };
 }
