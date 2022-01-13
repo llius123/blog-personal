@@ -30,7 +30,8 @@ export default function Posts(props: {
 }
 
 const body_css: CSSProperties = {
-  width: "1400px",
+  width: "100%",
+  maxWidth: "1400px",
   border: "1px solid red",
   height: "100px",
   display: "grid",
