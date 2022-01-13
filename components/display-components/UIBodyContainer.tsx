@@ -10,7 +10,6 @@ export default function UIBodyContainer({
 const body_css: CSSProperties = {
   width: "100%",
   maxWidth: "1400px",
-  border: "1px solid red",
-  height: "100px",
+  border: "1px solid black",
   display: "grid",
 };

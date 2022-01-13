@@ -15,15 +15,21 @@ export default function Post(props: { postData: PostInterface }): JSX.Element {
   return (
     <UIContainer>
       <UIHeader />
-      <PostData router={router} />
+      <PostData router={router} postData={props.postData} />
     </UIContainer>
   );
 }
 
-function PostData({ router }: { router: NextRouter }): JSX.Element {
+function PostData({
+  router,
+  postData,
+}: {
+  router: NextRouter;
+  postData: PostInterface;
+}): JSX.Element {
   return (
     <UIBodyContainer>
-      {router.isFallback ? <UILoading /> : <UIPost />}
+      {router.isFallback ? <UILoading /> : <UIPost postData={postData} />}
     </UIBodyContainer>
   );
 }
