@@ -3,7 +3,17 @@ Project:
         - Renderizar el contenido del post en la ventana de post
 
 Ideas:
-    - Que todos los posts se carguen al principio y que se guarden en el localstorage? (Repensar si tiene sentido)
+    - 13/01/2022
+        - La vista de leer posts que este centrada
+        - Meter un post de ejemplo para ver como queda
+        - Meter redes de contacto en el header
+        - Obtener metadata de un post
+
+Backlog tecnico:
+    - El apartado de perfil que sea un md tambien
+    - Centralizar la obtencio de posts/metadata
+    - Revisar porque va tan lento cuando carga cada ruta
+
 
 Archive:
     - 11-01-2022 @done
