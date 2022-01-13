@@ -3,7 +3,7 @@ import React, { CSSProperties } from "react";
 import { Views } from "../../utils/views";
 
 const views = Views;
-export default function Header(): JSX.Element {
+export default function UIHeader(): JSX.Element {
   return (
     <div style={header_container_css}>
       <div style={header_first_row_container}>

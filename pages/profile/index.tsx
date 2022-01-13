@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import Header from "../../components/header/header";
+import UIHeader from "../../components/header/UIHeader";
 import { getProfileData } from "../../lib/perfil";
 
 export async function getStaticProps() {
@@ -15,7 +15,7 @@ export async function getStaticProps() {
 export default function Profile({ allPostsData }) {
   return (
     <div style={container_css}>
-      <Header />
+      <UIHeader />
       <div dangerouslySetInnerHTML={{ __html: allPostsData.contentHtml }} />
     </div>
   );

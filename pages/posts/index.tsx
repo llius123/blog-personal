@@ -1,7 +1,7 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import Link from "next/link";
 import React, { CSSProperties } from "react";
-import Header from "../../components/header/header";
+import UIHeader from "../../components/header/UIHeader";
 import {
   getAllPostIds,
   getPostMetadata,
@@ -13,7 +13,7 @@ export default function Posts(props: {
 }): JSX.Element {
   return (
     <div style={container_css}>
-      <Header />
+      <UIHeader />
       <div style={body_css}>
         {props.allPostsId.map((postId, index) => {
           return (

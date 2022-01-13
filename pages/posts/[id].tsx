@@ -2,7 +2,7 @@ import { GetStaticPaths } from "next";
 import { useRouter } from "next/router";
 import { CSSProperties } from "react";
 import { PostInterface } from ".";
-import Header from "../../components/header/header";
+import UIHeader from "../../components/header/UIHeader";
 import { UILoading } from "../../components/loading/UILoading";
 import { UIPost } from "../../components/post/UIPost";
 import { getAllPostIds, getPostMetadata } from "../../lib/posts";
@@ -12,8 +12,8 @@ export default function Post(props: { postData: PostInterface }): JSX.Element {
 
   return (
     <div style={container_css}>
-      <Header />
-      {router.isFallback ? <UILoading /> : <UIPost />}
+      <UIHeader />
+      <div>{router.isFallback ? <UILoading /> : <UIPost />}</div>
     </div>
   );
 }

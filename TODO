@@ -4,6 +4,7 @@ Project:
 
 Ideas:
     - 13/01/2022
+        - Hacer componentes grid (componentes de gestion de posicionamiento de la vista)
         - La vista de leer posts que este centrada
         - Meter un post de ejemplo para ver como queda
         - Meter redes de contacto en el header
