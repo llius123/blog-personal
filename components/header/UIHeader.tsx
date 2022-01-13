@@ -29,6 +29,7 @@ const header_first_row_container: CSSProperties = {
 
 const header_container_css: CSSProperties = {
   width: "100%",
+  maxWidth: "1400px",
   border: "1px solid black",
   display: "grid",
   justifyContent: "center",

@@ -1,6 +1,8 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next";
 import Link from "next/link";
 import React, { CSSProperties } from "react";
+import UIBodyContainer from "../../components/display-components/UIBodyContainer";
+import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
 import {
   getAllPostIds,
@@ -12,30 +14,30 @@ export default function Posts(props: {
   allPostsId: PostsIdInterface[];
 }): JSX.Element {
   return (
-    <div style={container_css}>
+    <UIContainer>
       <UIHeader />
-      <div style={body_css}>
-        {props.allPostsId.map((postId, index) => {
-          return (
-            <React.Fragment key={index}>
-              <Link href={"/posts/" + postId.params.id}>
-                {postId.params.id}
-              </Link>{" "}
-            </React.Fragment>
-          );
-        })}
-      </div>
-    </div>
+      <ListPosts allPostsId={props.allPostsId} />
+    </UIContainer>
   );
 }
 
-const body_css: CSSProperties = {
-  width: "100%",
-  maxWidth: "1400px",
-  border: "1px solid red",
-  height: "100px",
-  display: "grid",
-};
+function ListPosts({
+  allPostsId,
+}: {
+  allPostsId: PostsIdInterface[];
+}): JSX.Element {
+  return (
+    <UIBodyContainer>
+      {allPostsId.map((postId, index) => {
+        return (
+          <React.Fragment key={index}>
+            <Link href={"/posts/" + postId.params.id}>{postId.params.id}</Link>{" "}
+          </React.Fragment>
+        );
+      })}
+    </UIBodyContainer>
+  );
+}
 const container_css: CSSProperties = {
   display: "grid",
   justifyItems: "center",
