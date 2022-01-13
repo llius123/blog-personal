@@ -6,8 +6,10 @@ Ideas:
     - 13/01/2022
         - Hacer componentes de gestion del display de los componentes @done
         - La vista de leer posts que este centrada @done
-        - Meter un post de ejemplo para ver como queda
+        - Meter un post de ejemplo para ver como queda @done
         - Meter redes de contacto en el header
+            - Meter iconos @done
+            - Hacer que los links lleven a la pagina que toca
         - Obtener metadata de un post
 
 Backlog tecnico:
