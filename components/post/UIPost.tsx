@@ -1,4 +1,5 @@
-export function UIPost(): JSX.Element {
-  // <div dangerouslySetInnerHTML={{ __html: props.postData.contentHtml }} />
-  return <div>PLACEHOLDER</div>;
+import { PostInterface } from "../../pages/posts";
+
+export function UIPost({ postData }: { postData: PostInterface }): JSX.Element {
+  return <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />;
 }
