@@ -17,7 +17,15 @@ export default function UIHeader(): JSX.Element {
             <h1>Jesus Maria Berisa Nuñez</h1>
             <h2>Full stack developer</h2>
           </div>
-          <div style={{ display: "grid", gridAutoFlow: "column" }}>
+          <div
+            style={{
+              display: "grid",
+              gridAutoFlow: "column",
+              justifyContent: "center",
+              gap: "20px",
+              margin: "20px 0 0 0",
+            }}
+          >
             {views.map((view) => {
               return (
                 <div key={view.id}>
