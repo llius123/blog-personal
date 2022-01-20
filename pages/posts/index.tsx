@@ -14,10 +14,10 @@ export default function Posts(props: {
   allPostsId: PostsIdInterface[];
 }): JSX.Element {
   return (
-    <UIContainer>
+    <>
       <UIHeader />
       <ListPosts allPostsId={props.allPostsId} />
-    </UIContainer>
+    </>
   );
 }
 

@@ -16,12 +16,12 @@ export async function getStaticProps() {
 
 export default function Profile({ allPostsData }) {
   return (
-    <UIContainer>
+    <>
       <UIHeader />
       <UIBodyContainer>
         <div dangerouslySetInnerHTML={{ __html: allPostsData.contentHtml }} />
       </UIBodyContainer>
-    </UIContainer>
+    </>
   );
 }
 

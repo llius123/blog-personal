@@ -13,10 +13,10 @@ export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
 
   return (
-    <UIContainer>
+    <>
       <UIHeader />
       <PostData router={router} postData={props.postData} />
-    </UIContainer>
+    </>
   );
 }
 
