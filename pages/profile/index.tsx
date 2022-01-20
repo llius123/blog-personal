@@ -1,4 +1,6 @@
 import React, { CSSProperties } from "react";
+import UIBodyContainer from "../../components/display-components/UIBodyContainer";
+import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
 import { getProfileData } from "../../lib/perfil";
 
@@ -14,10 +16,12 @@ export async function getStaticProps() {
 
 export default function Profile({ allPostsData }) {
   return (
-    <div style={container_css}>
+    <UIContainer>
       <UIHeader />
-      <div dangerouslySetInnerHTML={{ __html: allPostsData.contentHtml }} />
-    </div>
+      <UIBodyContainer>
+        <div dangerouslySetInnerHTML={{ __html: allPostsData.contentHtml }} />
+      </UIBodyContainer>
+    </UIContainer>
   );
 }
 

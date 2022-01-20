@@ -37,10 +37,3 @@ Fullstack: ReactJS, NodeJS, BBDD: Postgress.
 > Descubrimiento de arquitectura hexagonal.\
 > Aplicación de codigo limpio.\
 > Desarrollo a base de tests.
-
-### Aptitudes
-
-Buenas competencias para describir nuevas ideas y plasmarlas y al mismo tiempo desentrañar errores y posibles soluciones.\
-Capacidades organizativas para el desarrollo de aplicaciones web.\
-Me considero una persona seria, organizada con mi trabajo y responsable.\
-Gran documentador. Suelo documentar todo, desde las tareas realizadas a apuntes personales.

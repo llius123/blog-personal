@@ -1,24 +1,29 @@
 Project:
-    - 12-02-2022
-        - Renderizar el contenido del post en la ventana de post
-
+    ☐ 20-01-2022
+        ✔ Fixear el espaciado en el apartado del perfil @done(22-01-20 20:23)
+        ☐ Nuevo apartado: Metas 2022 (No creo que haga falta que sea md)
 Ideas:
-    - 13/01/2022
-        - Hacer componentes de gestion del display de los componentes @done
-        - La vista de leer posts que este centrada @done
-        - Meter un post de ejemplo para ver como queda @done
-        - Meter redes de contacto en el header
-            - Meter iconos @done
-            - Hacer que los links lleven a la pagina que toca
-        - Obtener metadata de un post
+
 
 Backlog tecnico:
-    - El apartado de perfil que sea un md tambien
-    - Centralizar la obtencio de posts/metadata
-    - Revisar porque va tan lento cuando carga cada ruta
+    ☐ El apartado de perfil que sea un md tambien
+    ☐ Centralizar la obtencio de posts/metadata
+    ☐ Revisar porque va tan lento cuando carga cada ruta
+    ☐ Desplegar
 
 
 Archive:
-    - 11-01-2022 @done
-        - Que funcione el listado de posts @done
-        - Que pueda entrar en un post @done
+    ✔ 18-02-2022 @done(22-01-20 20:14)
+    ✔ Obtener metadata de un post @done(22-01-20 20:14)
+    ✔ Crear seccion titulo dentro de un post @done(22-01-20 20:14)
+    ✔ Boton de volver a la lista de posts @done(22-01-20 20:14)
+    ✔ 13/01/2022 @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Hacer componentes de gestion del display de los componentes @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ La vista de leer posts que este centrada @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Meter un post de ejemplo para ver como queda @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Meter iconos @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Hacer que los links lleven a la pagina que toca @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ 11-01-2022 @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Que funcione el listado de posts @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Que pueda entrar en un post @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Renderizar el contenido del post en la ventana de post @project(Project) @done(22-01-18 22:01)
