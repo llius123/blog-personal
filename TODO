@@ -1,27 +1,34 @@
-Project:
-    ☐ 20-01-2022
-        ✔ Fixear el espaciado en el apartado del perfil @done(22-01-20 20:23)
-        ✔ Nuevo apartado: Metas 2022 (No creo que haga falta que sea md) @done(22-01-20 20:39)
-        ☐ Desplegar
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
 Ideas:
+    ☐ 24-01-2022
+        ✔ Crear una vista de biblioteca @done(22-01-24 19:53)
+        ☐ Pasar a la biblioteca lo de css
     ☐ Vista de pepe
         ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
         ☐ Nombre, tag
         ☐ Filtro/buscador
 
-
 Backlog tecnico:
+    ☐ Refactorizar el header y usarlo en el primer index y no en todas las vistas
     ☐ El apartado de perfil que sea un md tambien
     ☐ Centralizar la obtencio de posts/metadata
     ☐ Revisar porque va tan lento cuando carga cada ruta
 
-
 Archive:
+    ✔ 20-01-2022 @done(22-01-24 19:43) @project(Project)
+    ✔ Fixear el espaciado en el apartado del perfil @done(22-01-20 20:23) @project(Project)
+    ✔ Nuevo apartado: Metas 2022 (No creo que haga falta que sea md) @done(22-01-20 20:39) @project(Project)
+    ✔ Desplegar @done(22-01-24 19:43) @project(Project)
     ✔ 18-02-2022 @done(22-01-20 20:14)
     ✔ Obtener metadata de un post @done(22-01-20 20:14)
     ✔ Crear seccion titulo dentro de un post @done(22-01-20 20:14)
-    ✔ Boton de volver a la lista de posts @done(22-01-20 20:14)
     ✔ 13/01/2022 @project(Backlog tecnico) @done(22-01-18 22:01)
+    ✔ Boton de volver a la lista de posts @done(22-01-20 20:14)
     ✔ Hacer componentes de gestion del display de los componentes @project(Backlog tecnico) @done(22-01-18 22:01)
     ✔ La vista de leer posts que este centrada @project(Backlog tecnico) @done(22-01-18 22:01)
     ✔ Meter un post de ejemplo para ver como queda @project(Backlog tecnico) @done(22-01-18 22:01)
