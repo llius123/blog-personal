@@ -11,3 +11,7 @@ blockquote p {
 ul {
   list-style-type: disc;
 }
+
+p {
+  display: flex;
+}
