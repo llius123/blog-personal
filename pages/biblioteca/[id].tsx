@@ -7,7 +7,7 @@ import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
 import { UILoading } from "../../components/loading/UILoading";
 import { UIPost } from "../../components/post/UIPost";
-import { getAllPostIds, getPostMetadata } from "../../lib/posts";
+import { getAllPostIds, getPostMetadata } from "../../lib/biblioteca";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();

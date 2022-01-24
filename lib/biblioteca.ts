@@ -15,6 +15,8 @@ const bibliotecaDirectory = path.join(process.cwd(), 'posts/biblioteca')
 
 export function getAllPostIds(): PostsIdInterface[] {
     const fileNames = fs.readdirSync(bibliotecaDirectory)
+    console.log(fileNames);
+
 
     return fileNames.map(fileName => {
         return {
