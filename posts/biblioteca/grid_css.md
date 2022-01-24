@@ -12,13 +12,13 @@ tag: "biblioteca"
 
 Grid con el ancho 100%
 
-![](img/594eff05-8c78-4a1e-9c4a-cc936244aa8b.png)
+![](../images/biblioteca/594eff05-8c78-4a1e-9c4a-cc936244aa8b.png)
 
 `display:inline-grid`
 
 Grid pero con el ancho definido por el contenido
 
-![](img/495e0715-30c0-4269-a4b7-38e487823772.png)
+![](../images/biblioteca/495e0715-30c0-4269-a4b7-38e487823772.png)
 
 ## grid-template-columns/grid-template-rows
 
@@ -33,18 +33,18 @@ Propiedades:
 > fit-content\
 > Si por ejemplo pongo fit-content(40000px) la caja crecera hasta el max-content del contenido y como minimo se aplicara el min-content del contenido
 
-![](img/07e4fb2e-56a5-4bbe-bc8c-33ece20a0bdc.png)
+![](../images/biblioteca/07e4fb2e-56a5-4bbe-bc8c-33ece20a0bdc.png)
 
 - auto\
   Ancho automatico (Espacio restante)
 
-![](img/ab658b1f-be77-4dbb-ab83-d77b8da34397.png)
+![](../images/biblioteca/ab658b1f-be77-4dbb-ab83-d77b8da34397.png)
 
 - fracciones (fr)\
   Podemos definir cuanto espacio le damos a cada caja del total que hay/
   > En este ejemplo lo que estoy haciendo es que la primera caja sea de 100px la segunda y la tercera tenga el espacio restante dividido entre 2
 
-![](img/a3d4b32e-0b7e-4d8e-b86b-fafcf01f8bfb.png)
+![](../images/biblioteca/a3d4b32e-0b7e-4d8e-b86b-fafcf01f8bfb.png)
 
 - minmax\
   Le digo que tamaño minimo y maximo puede tener la caja.
@@ -68,7 +68,7 @@ Propiedades:
   > `grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))`\
   > La diferencia con la anterior es que si hay hueco en vez de usar todo el espacio creara cajas invisibles para rellenar el espacio
 
-![](img/b83e6586-f94f-4fd0-9d0d-c3382b578a22.png)
+![](../images/biblioteca/b83e6586-f94f-4fd0-9d0d-c3382b578a22.png)
 
 ## grid-auto-rows/grid-auto-columns
 
@@ -91,10 +91,12 @@ Algo importante es el **stretch** que sirve para que el contenido pill todo el e
 ## Extras
 
 - extra
-  ![](img/9de0c6f1-cd7c-4f40-a0b3-3ff5f7c4c8bd.png)
 
-- dense\
+  ![](../images/biblioteca/9de0c6f1-cd7c-4f40-a0b3-3ff5f7c4c8bd.png)
+
+- dense
   Si se quedan huecos vacios el dense sirve para rellenarlos
 
 - extra
-  ![](img/c3b0bb3e-a74a-46e3-9ad9-4942190cc645.png)
+
+  ![](../images/biblioteca/c3b0bb3e-a74a-46e3-9ad9-4942190cc645.png)
