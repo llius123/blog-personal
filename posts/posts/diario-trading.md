@@ -4,6 +4,51 @@ date: "2020-01-30"
 tag: "trading"
 ---
 
+# 01-02-2022 - Long
+
+Paper trade GBPJPY.\
+Take profif 157.564.
+Stop loss 153.736.\
+
+Creo esta operacion por varia cosas:
+
+- Recuperacion rapida a la perdida de emas diarias.
+- Stoch a cruzado hacia arriba.
+- RSI encima de 50 y subiendo.
+- OBV en positivo despues de ir en negativo durante varios dias.
+
+![](../images/posts/b55ea7b0-ecbe-4807-9c0f-5de54092f8de.png)
+
+# 01-02-2022 - Long
+
+Paper trade GBPCHF.\
+Stop loss 1.25635.\
+Take profif 1.24015.
+
+Creo esta operacion por varia cosas:
+
+- Apoyando en las emas diarias.
+- Las emas de 4h no han marcado cambio de tendencia
+- Stoch por los suelos.
+
+![](../images/posts/980dc6cc-9526-4eae-80d7-59e63154943d.png)
+
+# 01-02-2022 - Short
+
+Orden a mercado en EURUSD.\
+Stop loss 1.13466.\
+Take profif 1.10582.
+
+Creo esta operacion por varia cosas:
+
+- Tendencia bajista.
+- Stoch por las nubes.
+- RSI 60 pero bajando.
+- OBV positivo.
+- La entrada se produce en el 0.618 de fibo(Casualidad de la buena).
+
+![](../images/posts/2f22df0b-ad0b-450b-9031-f20a2310d85c.png)
+
 # 01-02-2022 - Short
 
 Orden a mercado en EURCAD.\
