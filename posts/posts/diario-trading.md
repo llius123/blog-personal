@@ -4,6 +4,18 @@ date: "2020-01-30"
 tag: "trading"
 ---
 
+# Historial
+
+Wins: 0\
+Loses: 2\
+Running: 2
+
+# Apuntes interesantes
+
+- Mirar siempre el macro
+- Mirar si la estructura bajista o alcista se ha roto
+- Fijarse en el par fuerte X/USD
+
 # 01-02-2022 - Long
 
 Paper trade GBPJPY.\
@@ -33,7 +45,7 @@ Creo esta operacion por varia cosas:
 
 ![](../images/posts/980dc6cc-9526-4eae-80d7-59e63154943d.png)
 
-# 01-02-2022 - Short
+# 01-02-2022 - Short - Lose
 
 Orden a mercado en EURUSD.\
 Stop loss 1.13466.\
@@ -49,7 +61,15 @@ Creo esta operacion por varia cosas:
 
 ![](../images/posts/2f22df0b-ad0b-450b-9031-f20a2310d85c.png)
 
-# 01-02-2022 - Short
+Resumen:
+
+![](../images/posts/b6ca68a3-c424-4cd2-a576-afc59a2f1d96.png)
+
+La entrada era buena siempre y cuando estubieramos en una tendencia bajista pero mirando el estado macro (en diario) lo que se ve es que estamos en una tendencia alcista y por lo tanto esto era un retroceso para seguir subiendo.
+
+![](../images/posts/a70733eb-c46a-4827-920e-0ce1308d6872.png)
+
+# 01-02-2022 - Short - Loss
 
 Orden a mercado en EURCAD.\
 Stop loss 1.43782.\
@@ -65,6 +85,11 @@ Creo esta operacion por varia cosas:
 > En 4h las emas se han puesto alcistas, esto no esta probado pero alomejor que las emas de 4h esten en alcista es una señal de no entrar en short.
 
 ![](../images/posts/e813e17a-9bad-43b0-ae31-256a82d53207.png)
+
+Resumen:
+No se tendria que haber entrado en short porque la erstructura bajista se ha roto.
+
+![](../images/posts/1bc2e522-fb3a-4c2d-9a07-2db46402619b.png)
 
 # 30-01-2022 - Short - Loss
 
