@@ -6,9 +6,15 @@ tag: "trading"
 
 # Historial
 
-Wins: 0
-Loses: 2
+Wins: 0\
+Loses: 2\
 Running: 2
+
+# Apuntes interesantes
+
+- Mirar siempre el macro
+- Mirar si la estructura bajista o alcista se ha roto
+- Fijarse en el par fuerte X/USD
 
 # 01-02-2022 - Long
 
