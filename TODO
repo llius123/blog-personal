@@ -5,21 +5,24 @@
 'Alt+S' // Triggers `Todo: Toggle Start`
 'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
 Ideas:
-    ☐ 24-01-2022
-        ✔ Crear una vista de biblioteca @done(22-01-24 19:53)
-        ☐ Pasar a la biblioteca lo de css
+    ☐ Posts
+        ✔ Arquitectura hexagonal @done(22-04-03 20:49)
+        ☐ Principios SOLID
     ☐ Vista de pepe
         ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
         ☐ Nombre, tag
         ☐ Filtro/buscador
-
-Backlog tecnico:
-    ☐ Refactorizar el header y usarlo en el primer index y no en todas las vistas
-    ☐ El apartado de perfil que sea un md tambien
-    ☐ Centralizar la obtencio de posts/metadata
-    ☐ Revisar porque va tan lento cuando carga cada ruta
-
+    
+    Backlog tecnico:
+        ☐ Refactorizar el header y usarlo en el primer index y no en todas las vistas
+        ☐ El apartado de perfil que sea un md tambien
+        ☐ Centralizar la obtencio de posts/metadata
+        ☐ Revisar porque va tan lento cuando carga cada ruta
+        
 Archive:
+    ✔ 24-01-2022 @done(22-04-03 20:48)
+        ✔ Crear una vista de biblioteca @done(22-01-24 19:53)
+        ✔ Pasar a la biblioteca lo de css @done(22-04-03 20:48)
     ✔ 20-01-2022 @done(22-01-24 19:43) @project(Project)
     ✔ Fixear el espaciado en el apartado del perfil @done(22-01-20 20:23) @project(Project)
     ✔ Nuevo apartado: Metas 2022 (No creo que haga falta que sea md) @done(22-01-20 20:39) @project(Project)
