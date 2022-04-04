@@ -11,8 +11,7 @@ export class GetAllPostsId{
 
     public async run(): Promise<GetStaticPropsResult<{ allPostsId: PostsIdInterface[] }>> {
         const post = new PostRepo(this.folder)
-        const allPostsId: PostsIdInterface[] = await post.getAllPostIds(this.folder);
-
+        const allPostsId: PostsIdInterface[] = await post.getAllPostIds();
         return { props: { allPostsId: allPostsId } };
     }
 }
