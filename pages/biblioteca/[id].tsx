@@ -4,6 +4,7 @@ import UIHeader from "../../components/header/UIHeader";
 import { UIPostWrapper } from "../../components/post/UIPostWrapper";
 import { GetPostMetadata } from "../../lib/post/GetPostMetadata";
 import { PostInterface } from "../../lib/post/PostInterface";
+import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
@@ -25,5 +26,15 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
 
 export async function getStaticProps({ params }) { 
-  return await new GetPostMetadata('biblioteca', params.id).run()
+  const post = new PostRepo('biblioteca')
+  const postData = await post.getPostMetadata(params.id);
+  console.log(postData);
+  
+
+  // const postData = { id: "123" };
+  return {
+    props: {
+      postData,
+    },
+  };
 }
