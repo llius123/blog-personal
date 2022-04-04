@@ -4,6 +4,7 @@ import UIHeader from "../../components/header/UIHeader";
 import { UIPostWrapper } from "../../components/post/UIPostWrapper";
 import { GetPostMetadata } from "../../lib/post/GetPostMetadata";
 import { PostInterface } from "../../lib/post/PostInterface";
+import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
