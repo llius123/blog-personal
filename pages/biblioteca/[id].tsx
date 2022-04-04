@@ -40,12 +40,42 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
 export async function getStaticProps({ params }) {
   const post = new PostRepo('biblioteca')
-  const postData = await post.getPostMetadata(params.id);
+  const postData = await getPostMetadata(params.id);
 
   // const postData = { id: "123" };
   return {
     props: {
       postData,
     },
+  };
+}
+import path from 'path'
+import fs from 'fs'
+import matter from 'gray-matter'
+import { remark } from 'remark'
+import html from 'remark-html'
+async function getPostMetadata(id: string): Promise<PostInterface> {
+  const fullPath = path.join(this.getFolder(), `${id}.md`)
+  const fileContents = await fs.readFileSync(fullPath, 'utf8')
+
+
+  // Use gray-matter to parse the post metadata section
+  const { content, data: { title, date, tag } }: matter.GrayMatterFile<string> = matter(fileContents)
+
+
+
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
+      .use(html)
+      .process(content)
+  const contentHtml = processedContent.toString()
+
+  // Combine the data with the id and contentHtml
+  return {
+      id,
+      contentHtml,
+      date,
+      title,
+      tag
   };
 }
