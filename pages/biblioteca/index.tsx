@@ -22,5 +22,5 @@ export default function Posts(props: {
 export async function getStaticProps(): Promise<
   GetStaticPropsResult<{ allPostsId: PostsIdInterface[] }>
 > {
-  return new GetAllPostsId(folder).run()
+  return await new GetAllPostsId(folder).run()
 }
