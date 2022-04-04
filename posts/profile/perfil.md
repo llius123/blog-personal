@@ -17,7 +17,7 @@ jesusberisa96@gmail.com
 
 ### Estado profesional:
 
-Trabajando como full stack developer en: [designable](https://www.designable.es/)
+En busqueda de trabajo
 
 ### Experiencia profesional
 
@@ -30,7 +30,7 @@ _Marzo-2020,Mayo-2021_\
 Fullstack: Angular 6+, Java (apache isis), BBDD: Postgress
 
 **Designable**\
-_Mayo-2021,actualidad_\
+_Mayo-2021,Marzo-2022_\
 Fullstack: ReactJS, NodeJS, BBDD: Postgress.
 
 > Descubrimiento de DDD (domain driven design).\
