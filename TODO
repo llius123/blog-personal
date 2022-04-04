@@ -5,13 +5,14 @@
 'Alt+S' // Triggers `Todo: Toggle Start`
 'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
 Ideas:
-    ☐ Posts
-        ✔ Arquitectura hexagonal @done(22-04-03 20:49)
-        ☐ Principios SOLID
+    ☐ Refactor
+        ☐ Refactorizar lib @started(22-04-04 11:51)
+        ☐ Refactorizar pages
+    ☐ Añadir pagina de teclados
     ☐ Vista de pepe
-        ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
-        ☐ Nombre, tag
-        ☐ Filtro/buscador
+    ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
+    ☐ Nombre, tag
+    ☐ Filtro/buscador
     
     Backlog tecnico:
         ☐ Refactorizar el header y usarlo en el primer index y no en todas las vistas
@@ -20,6 +21,9 @@ Ideas:
         ☐ Revisar porque va tan lento cuando carga cada ruta
         
 Archive:
+    ✔ Posts @done(22-04-04 11:48)
+        ✔ Arquitectura hexagonal @done(22-04-03 20:49)
+        ✔ Principios SOLID @done(22-04-04 11:48)
     ✔ 24-01-2022 @done(22-04-03 20:48)
         ✔ Crear una vista de biblioteca @done(22-01-24 19:53)
         ✔ Pasar a la biblioteca lo de css @done(22-04-03 20:48)
