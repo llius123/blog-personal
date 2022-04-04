@@ -41,8 +41,7 @@ export async function getStaticProps(): Promise<
   GetStaticPropsResult<{ allPostsId: PostsIdInterface[] }>
 > {
   const post = new PostRepo('biblioteca')
-  // const allPostsId: PostsIdInterface[] = await post.getAllPostIds();
-  const allPostsId: PostsIdInterface[] = [{params: {id : 'Arquitectura_Hexagonal'}}, {params: {id : 'Principios_solid'}}]
+  const allPostsId: PostsIdInterface[] = await post.getAllPostIds();
 
   return { props: { allPostsId: allPostsId } };
 }
