@@ -20,9 +20,7 @@ export class PostRepo {
     }
 
     public getAllPostIds(): PostsIdInterface[] {
-        const fileNames = fs.readdirSync(this.getFolder())
-        console.log(fileNames);
-    
+        const fileNames = fs.readdirSync(this.getFolder())    
     
         return fileNames.map(fileName => {
             return {

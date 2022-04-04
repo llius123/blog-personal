@@ -8,7 +8,6 @@ import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
-  console.log(router);
 
   return (
     <>
