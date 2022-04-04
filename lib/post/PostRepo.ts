@@ -19,8 +19,8 @@ export class PostRepo {
         return path.join(process.cwd(), this.route + this.folder)
     }
 
-    public getAllPostIds(): PostsIdInterface[] {
-        const fileNames = fs.readdirSync(this.getFolder())    
+    public getAllPostIds(folder: string): PostsIdInterface[] {
+        const fileNames = fs.readdirSync(folder)    
     
         return fileNames.map(fileName => {
             return {
