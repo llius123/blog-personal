@@ -1,10 +1,12 @@
-import { GetStaticPropsContext, GetStaticPropsResult } from "next";
-import Link from "next/link";
-import React, { CSSProperties } from "react";
-import UIBodyContainer from "../../components/display-components/UIBodyContainer";
+import { GetStaticPropsResult } from "next";
+import React from "react";
 import UIHeader from "../../components/header/UIHeader";
+import { UIListPosts } from "../../components/post/UIListPosts";
 import { PostRepo } from "../../lib/post/PostRepo";
 import { PostsIdInterface } from "../../lib/post/PostsIdInterface";
+import { GetAllPostsId } from "../../lib/post/GetAllPostsId";
+
+const folder = 'biblioteca'
 
 export default function Posts(props: {
   allPostsId: PostsIdInterface[];
@@ -12,36 +14,13 @@ export default function Posts(props: {
   return (
     <>
       <UIHeader />
-      <ListPosts allPostsId={props.allPostsId} />
+      <UIListPosts href={folder} allPostsId={props.allPostsId} />
     </>
-  );
-}
-
-function ListPosts({
-  allPostsId,
-}: {
-  allPostsId: PostsIdInterface[];
-}): JSX.Element {
-  return (
-    <UIBodyContainer>
-      {allPostsId.map((postId, index) => {
-        return (
-          <React.Fragment key={index}>
-            <Link href={"/biblioteca/" + postId.params.id}>
-              {postId.params.id}
-            </Link>{" "}
-          </React.Fragment>
-        );
-      })}
-    </UIBodyContainer>
   );
 }
 
 export async function getStaticProps(): Promise<
   GetStaticPropsResult<{ allPostsId: PostsIdInterface[] }>
 > {
-  const post = new PostRepo('biblioteca')
-  const allPostsId: PostsIdInterface[] = await post.getAllPostIds();
-
-  return { props: { allPostsId: allPostsId } };
+  return new GetAllPostsId(folder).run()
 }
