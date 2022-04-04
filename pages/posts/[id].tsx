@@ -7,7 +7,7 @@ import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
 import { UILoading } from "../../components/loading/UILoading";
 import { UIPost } from "../../components/post/UIPost";
-import { getAllPostIds, getPostMetadata } from "../../lib/posts";
+import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
@@ -41,7 +41,8 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 };
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostMetadata(params.id);
+  const post = new PostRepo('posts')
+  const postData = await post.getPostMetadata(params.id);
 
   // const postData = { id: "123" };
   return {

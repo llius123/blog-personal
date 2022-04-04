@@ -4,11 +4,8 @@ import React, { CSSProperties } from "react";
 import UIBodyContainer from "../../components/display-components/UIBodyContainer";
 import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
-import {
-  getAllPostIds,
-  getPostMetadata,
-  PostsIdInterface,
-} from "../../lib/posts";
+import { PostRepo } from "../../lib/post/PostRepo";
+import { PostsIdInterface } from "../../lib/post/PostsIdInterface";
 
 export default function Posts(props: {
   allPostsId: PostsIdInterface[];
@@ -54,7 +51,8 @@ export interface PostInterface {
 export async function getStaticProps(): Promise<
   GetStaticPropsResult<{ allPostsId: PostsIdInterface[] }>
 > {
-  const allPostsId: PostsIdInterface[] = await getAllPostIds();
+  const post = new PostRepo('posts')
+  const allPostsId: PostsIdInterface[] = await post.getAllPostIds();
 
   return { props: { allPostsId: allPostsId } };
 }

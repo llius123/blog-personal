@@ -1,13 +1,11 @@
 import { GetStaticPaths } from "next";
 import { NextRouter, useRouter } from "next/router";
-import { CSSProperties } from "react";
-import { PostInterface } from ".";
 import UIBodyContainer from "../../components/display-components/UIBodyContainer";
-import UIContainer from "../../components/display-components/UIContainer";
 import UIHeader from "../../components/header/UIHeader";
 import { UILoading } from "../../components/loading/UILoading";
 import { UIPost } from "../../components/post/UIPost";
-import { getAllPostIds, getPostMetadata } from "../../lib/biblioteca";
+import { PostInterface } from "../../lib/post/PostInterface";
+import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
@@ -41,7 +39,8 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 };
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostMetadata(params.id);
+  const post = new PostRepo('biblioteca')
+  const postData = await post.getPostMetadata(params.id);
 
   // const postData = { id: "123" };
   return {
