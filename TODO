@@ -6,8 +6,9 @@
 'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
 Ideas:
     ☐ Refactor
-        ☐ Refactorizar lib @started(22-04-04 11:51)
-        ☐ Refactorizar pages
+        ✔ Refactorizar lib @started(22-04-04 11:51) @done(22-04-04 12:28) @lasted(37m10s)
+        ☐ Refactorizar componentes
+            Los componentes de biblioteca y de posts son iguales
     ☐ Añadir pagina de teclados
     ☐ Vista de pepe
     ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
