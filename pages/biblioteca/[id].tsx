@@ -26,15 +26,5 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
 
 export async function getStaticProps({ params }) { 
-  const post = new PostRepo('biblioteca')
-  const postData = await post.getPostMetadata(params.id);
-  console.log(postData);
-  
-
-  // const postData = { id: "123" };
-  return {
-    props: {
-      postData,
-    },
-  };
+  return await new GetPostMetadata('biblioteca', params.id).run()
 }
