@@ -7,8 +7,11 @@
 Ideas:
     ☐ Refactor
         ✔ Refactorizar lib @started(22-04-04 11:51) @done(22-04-04 12:28) @lasted(37m10s)
-        ☐ Refactorizar componentes
+        ✔ Refactorizar componentes @done(22-04-04 13:33)
             Los componentes de biblioteca y de posts son iguales
+        ✔ Refactorizar metodos repetidos @done(22-04-04 13:34)
+            Por ejemplo getAllId, getProps
+        ☐ Eliminar La pestaña de posts y meterlos en biblioteca
     ☐ Añadir pagina de teclados
     ☐ Vista de pepe
     ☐ Listado con todos los memes de pepe que encuentre por internet/ me gusten.
