@@ -12,11 +12,6 @@ export const Views: ViewsInterface[] = [
     },
     {
         id: '2',
-        href: '/posts',
-        title: 'Posts'
-    },
-    {
-        id: '3',
         href: '/biblioteca',
         title: 'Biblioteca'
     }

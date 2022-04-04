@@ -144,7 +144,7 @@ final class StandardOutputHtmlPrinter implements Printer
 
 En forma de UML (lineas discontinuas significa que una clase esta implementado una interfaz)
 
-![Untitled](../images/posts/Principios_solid/Untitled.png)
+![Untitled](../images/biblioteca/Principios_solid/Untitled.png)
 
 ### Video de ejemplo de codely
 
@@ -152,7 +152,7 @@ En forma de UML (lineas discontinuas significa que una clase esta implementado u
 
 ### Pregunta interesante: ¿Cuándo empujaremos la lógica de negocio hacia nuestros modelos de dominio?
 
-![Untitled](../images/posts/Principios_solid/Untitled%201.png)
+![Untitled](../images/biblioteca/Principios_solid/Untitled%201.png)
 
 Claro, depende de las dependencias, si tiene dependencias externas no.
 

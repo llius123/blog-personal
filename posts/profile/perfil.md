@@ -21,16 +21,19 @@ En busqueda de trabajo
 
 ### Experiencia profesional
 
-**VIEWNEXT (IBM subsidiary)**\
-_Marzo-2019,Marzo-2020_\
+**VIEWNEXT (IBM subsidiary)**
+_Marzo-2019,Marzo-2020_
+
 Fullstack: Angular 6+ ,Java (springboot), BBDD: Oracle
 
-**ElevenPaths**\
-_Marzo-2020,Mayo-2021_\
+**ElevenPaths**
+_Marzo-2020,Mayo-2021_
+
 Fullstack: Angular 6+, Java (apache isis), BBDD: Postgress
 
-**Designable**\
-_Mayo-2021,Marzo-2022_\
+**Designable**
+_Mayo-2021,Marzo-2022_
+
 Fullstack: ReactJS, NodeJS, BBDD: Postgress.
 
 > Descubrimiento de DDD (domain driven design).\
