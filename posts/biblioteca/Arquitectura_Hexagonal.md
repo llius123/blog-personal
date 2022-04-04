@@ -14,7 +14,7 @@ tag: "programacion"
 
 ## Que es la arquitectura hexagonal
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled.jpeg)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled.jpeg)
 
 Las arquitecturas limpias definen una serie de capas en nuestra aplicación.
 
@@ -62,11 +62,11 @@ Ej: MYSQLUserRepo
 > Esto no me queda muy claro porque no veo como lo he aplicacado en Designable
 > 
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled.png)
 
 ## Patron repository
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled%201.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled%201.png)
 
 El patron repository es la idea de crear interfaces, para que la accion este desacoplada a la implementacion del repositorio.
 
@@ -140,11 +140,11 @@ La idea es la misma que la del patron repository.
 
 Desacoplado la implementacion de la accion.
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled%202.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled%202.png)
 
 ### Apunte interesante sobre el ejemplo de email y slack
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled%203.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled%203.png)
 
 Cuando inicializo la clase slack, el constructor me tiene que pedir el parametro chanell.
 
@@ -167,14 +167,14 @@ Representan una agrupacion de logica de negacio que podremos reutilizar desde mu
 
 Ejemplo largo
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled%204.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled%204.png)
 
 - Servicio de aplicacion
 El servicio de aplicacion recibe por constructor el colaborador, para evitar acoples lo hace a traves de una interfaz de dominio
 
 ### No abusar de los servicios de dominio
 
-![Untitled](../images/posts/Arquitectura_Hexagonal/Untitled%205.png)
+![Untitled](../images/biblioteca/Arquitectura_Hexagonal/Untitled%205.png)
 
 ## Modelando nuestro dominio
 
