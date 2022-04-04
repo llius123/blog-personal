@@ -1,9 +1,11 @@
 import { GetStaticPaths } from "next";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
+import UIBodyContainer from "../../components/display-components/UIBodyContainer";
 import UIHeader from "../../components/header/UIHeader";
-import { UIPostWrapper } from "../../components/post/UIPostWrapper";
-import { GetPostMetadata } from "../../lib/post/GetPostMetadata";
+import { UILoading } from "../../components/loading/UILoading";
+import { UIPost } from "../../components/post/UIPost";
 import { PostInterface } from "../../lib/post/PostInterface";
+import { PostRepo } from "../../lib/post/PostRepo";
 
 export default function Post(props: { postData: PostInterface }): JSX.Element {
   const router = useRouter();
@@ -11,11 +13,24 @@ export default function Post(props: { postData: PostInterface }): JSX.Element {
   return (
     <>
       <UIHeader />
-      <UIPostWrapper router={router} postData={props.postData} />
+      <PostData router={router} postData={props.postData} />
     </>
   );
 }
 
+function PostData({
+  router,
+  postData,
+}: {
+  router: NextRouter;
+  postData: PostInterface;
+}): JSX.Element {
+  return (
+    <UIBodyContainer>
+      {router.isFallback ? <UILoading /> : <UIPost postData={postData} />}
+    </UIBodyContainer>
+  );
+}
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   return {
     paths: [], //indicates that no page needs be created at build time
@@ -23,7 +38,14 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   };
 };
 
+export async function getStaticProps({ params }) {
+  const post = new PostRepo('biblioteca')
+  const postData = await post.getPostMetadata(params.id);
 
-export async function getStaticProps({ params }) { 
-  return await new GetPostMetadata('biblioteca', params.id).run()
+  // const postData = { id: "123" };
+  return {
+    props: {
+      postData,
+    },
+  };
 }
