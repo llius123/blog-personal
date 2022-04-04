@@ -19,3 +19,7 @@ p {
 p > img {
   margin: 0 !important;
 }
+
+pre {
+  overflow: hidden;
+}
